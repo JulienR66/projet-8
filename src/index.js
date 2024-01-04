@@ -13,12 +13,6 @@ import Logement from './components/Logement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <div>Hello world!</div>,
-//   },
-// ]);
 
 root.render(
   <React.StrictMode>
