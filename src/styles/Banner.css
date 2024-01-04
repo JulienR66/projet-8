@@ -30,7 +30,7 @@ section div {
     mix-blend-mode: darken;
 }
 
-h1 {
+section h1 {
     max-width: 705px;
     max-height: 68px;
     color: #FFF;

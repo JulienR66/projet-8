@@ -12,7 +12,7 @@ nav {
     display: flex;
 }
 
-nav a {
+.nav-link {
     cursor: pointer;
     color: #FF6060;
     text-align: right;
@@ -21,8 +21,9 @@ nav a {
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
+    text-decoration: none;
 }
 
-nav a:hover {
+.nav-link:hover {
     text-decoration-line: underline;
 }

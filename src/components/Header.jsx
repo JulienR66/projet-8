@@ -1,5 +1,7 @@
 import '../styles/Header.css';
 import logo from '../assets/kasa.png';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
 
@@ -8,8 +10,8 @@ function Header() {
         <header className='kasa-header'>
             <img src={logo} alt="" />
             <nav className='nav'>
-                <a>Accueil</a>
-                <a>A Propos</a>
+                <Link className='nav-link' to="/">Accueil</Link>
+                <Link className='nav-link' to="/Apropos">A Propos</Link>
             </nav>
         </header>
     )
