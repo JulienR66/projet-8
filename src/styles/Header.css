@@ -1,14 +1,18 @@
 .kasa-header {
-    padding: 45px 100px;
+    padding: 5%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     height: 68px;
     align-items: center;
+    max-width: 1240px;
 }
 
 nav {
     gap: 57px;
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .nav-link {
@@ -27,20 +31,6 @@ nav {
     text-decoration-line: underline;
 }
 
-@media only screen and (max-width: 1024px) {
-
-    .kasa-header {
-        padding: 45px 50px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .kasa-header {
-        padding: 45px 30px;
-
-    }
-}
 
 @media only screen and (max-width: 426px) {
     .kasa-header img {
@@ -53,6 +43,6 @@ nav {
     }
 
     .nav-link {
-        font-size: 12px;
+        font-size: 17px;
     }
 }
