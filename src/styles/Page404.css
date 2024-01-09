@@ -44,3 +44,20 @@
 .return:hover {
     text-decoration-line: underline;
 }
+
+@media only screen and (max-width: 426px) {
+    .number {
+        font-size: 96px;
+        height: 99px;
+        margin: 113px 0px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    .return {
+        font-size: 14px;
+        margin: 113px 0;
+    }
+}

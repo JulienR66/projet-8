@@ -32,6 +32,12 @@ nav {
 }
 
 
+@media only screen and (max-width: 490px) {
+    .nav-link {
+        font-size: 17px;
+    }
+}
+
 @media only screen and (max-width: 426px) {
     .kasa-header img {
         width: 145px;
@@ -40,9 +46,5 @@ nav {
 
     nav {
         gap: 26px;
-    }
-
-    .nav-link {
-        font-size: 17px;
     }
 }
