@@ -5,5 +5,34 @@
     background-color: red;
     width: 100%;
     height: 100%;
-    margin: 50px;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.card-content img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content h2 {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 20px 20px 20px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .card-content {
+        max-width: 335px;
+        max-height: 255px;
+    }
 }

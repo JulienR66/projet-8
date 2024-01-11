@@ -14,6 +14,7 @@ function Home() {
         <Card />
         <Card />
         <Card />
+        <Card />
       </div>
       </section>
       </>
@@ -21,5 +22,5 @@ function Home() {
       
   }
   
-  export default Home;
+export default Home;
   

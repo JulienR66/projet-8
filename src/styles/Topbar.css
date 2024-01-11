@@ -56,3 +56,15 @@
     padding: 0;
     list-style: none;
 }
+
+
+@media only screen and (max-width: 426px) {
+    .topbar h2 {
+        font-size: 19px;
+        line-height: 0;
+    }
+
+    .topbar {
+        max-height: 20px;
+    }
+}

@@ -7,8 +7,9 @@ function Banner({image, title}) {
             <div className='img-container'>
                 <div className='black-filter'></div>
                 <img src={image} alt="" />
+                <h1>{title}</h1>
             </div>
-            <h1>{title}</h1>
+            
         </section>
     )
 
