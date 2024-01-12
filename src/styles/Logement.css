@@ -75,3 +75,12 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.topbar-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    gap: 76px;
+}
