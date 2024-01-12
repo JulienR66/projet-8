@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import '../styles/Logement.css';
 import Slides from './Slides';
 import Tag from './Tag';
@@ -14,8 +14,8 @@ function Logement() {
     const selectedLogement = data.find(item => item.id === id);
   
     if (!selectedLogement) {
-      // Gérer le cas où le logement n'est pas trouvé
-      return <p>Logement non trouvé</p>;
+      // Rediriger vers la page 404 si le logement n'est pas trouvé
+     return <Navigate to='*' />;
     }
   
     const { title, location, host, tags, description, equipments } = selectedLogement;
