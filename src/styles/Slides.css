@@ -29,3 +29,15 @@
 .slides-arrow-right {
     right: 20px;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .slides-container {
+        height: 255px;
+    }
+
+    .slides-arrow {
+        bottom: 115px;
+        height: 24px;
+    }
+}

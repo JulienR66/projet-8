@@ -18,12 +18,14 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
+        <main>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/Logement/:id" element={<Logement />} />
                 <Route path='*' element={<Page404 />} />
             </Routes>
+          </main>
       <Footer />      
                   </Router>
   </React.StrictMode>

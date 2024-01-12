@@ -1,10 +1,10 @@
 import '../styles/Tag.css';
 
 
-function Tag() {
+function Tag({tag}) {
 
     return (
-        <span className='tag'>Cosy</span>
+        <span className='tag'>{tag}</span>
     )
     
 }

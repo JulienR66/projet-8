@@ -12,3 +12,7 @@ code {
     monospace;
     font-family: 'Montserrat', sans-serif;
 }
+
+main {
+  padding: 0 5%;
+}

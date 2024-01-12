@@ -57,7 +57,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
+    line-height: 142.6%;
+    max-width: 93px;
 }
 
 .rating-container {
@@ -83,4 +84,29 @@
     width: 100%;
     margin: auto;
     gap: 76px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .topbar-section {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .section-housing-host {
+        flex-direction: column;
+    }
+
+    .host-rating-container {
+        flex-direction: row-reverse;
+    }
+
+    .rating-container {
+        align-items: flex-end;
+    }
+
+    .host-container h2 {
+        margin: 0;
+        margin-top: 16px;
+    }
 }
