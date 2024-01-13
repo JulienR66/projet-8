@@ -3,7 +3,8 @@ import { useParams, Navigate } from 'react-router-dom';
 import '../styles/Logement.css';
 import Slides from './Slides';
 import Tag from './Tag';
-import starRating from '../assets/star-rating.svg';
+import starRatingGray from '../assets/star-rating-gray.svg';
+import starRatingRed from '../assets/star-rating-red.svg';
 import Topbar from './Topbar';
 import data from '../data/data.json';
 
@@ -14,11 +15,12 @@ function Logement() {
     const selectedLogement = data.find(item => item.id === id);
   
     if (!selectedLogement) {
+      
       // Rediriger vers la page 404 si le logement n'est pas trouvé
      return <Navigate to='*' />;
     }
   
-    const { title, location, host, tags, description, equipments } = selectedLogement;
+    const { title, location, host, tags, description, equipments, pictures, rating } = selectedLogement;
   
     const { name: hostName, picture: hostPicture } = host;
 
@@ -34,9 +36,21 @@ function Logement() {
         </ul>
       );
 
+      // Convertir la propriété "rating" en nombre pour utiliser dans la boucle
+    const ratingValue = parseInt(rating);
+
+    const stars = Array.from({ length: 5 }, (_, index) => (
+      <img
+        key={index}
+        src={index < ratingValue ? starRatingRed : starRatingGray}
+        alt={`Star ${index + 1}`}
+      />
+    ));
+
+
   return (
     <>
-      <Slides />
+      <Slides pictures={pictures} />
       <section className='section-housing-host'>
         <div className='housing-container'>
           <h1>{title}</h1>
@@ -51,11 +65,7 @@ function Logement() {
             <img src={hostPicture} alt="" />
           </div>
           <div className='rating-container'>
-            <img src={starRating} alt="" />
-            <img src={starRating} alt="" />
-            <img src={starRating} alt="" />
-            <img src={starRating} alt="" />
-            <img src={starRating} alt="" />
+            {stars}
           </div>
         </div>
       </section>

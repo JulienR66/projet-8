@@ -66,6 +66,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 7px;
+    margin-bottom: 5px;
 }
 
 .rating-container img {
@@ -129,5 +130,9 @@
 
     .tag-container {
         flex-direction: column;
+    }
+
+    .rating-container img {
+        height: 16px;
     }
 }
