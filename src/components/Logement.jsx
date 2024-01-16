@@ -3,10 +3,9 @@ import { useParams, Navigate } from 'react-router-dom';
 import '../styles/Logement.css';
 import Slides from './Slides';
 import Tag from './Tag';
-import starRatingGray from '../assets/star-rating-gray.svg';
-import starRatingRed from '../assets/star-rating-red.svg';
 import Topbar from './Topbar';
 import data from '../data/data.json';
+import Rating from './Rating';
 
 function Logement() {
 
@@ -36,17 +35,7 @@ function Logement() {
         </ul>
       );
 
-      // Convertir la propriété "rating" en nombre pour utiliser dans la boucle
     const ratingValue = parseInt(rating);
-
-    const stars = Array.from({ length: 5 }, (_, index) => (
-      <img
-        key={index}
-        src={index < ratingValue ? starRatingRed : starRatingGray}
-        alt={`Star ${index + 1}`}
-      />
-    ));
-
 
   return (
     <>
@@ -65,7 +54,7 @@ function Logement() {
             <img src={hostPicture} alt="" />
           </div>
           <div className='rating-container'>
-            {stars}
+            <Rating RatingValue={ratingValue} />
           </div>
         </div>
       </section>
