@@ -1,7 +1,7 @@
-import '../styles/Page404.css';
+import '../styles/ErrorPage.css';
 import { Link } from 'react-router-dom';
 
-function Page404() {
+function ErrorPage() {
     return (
         <div>
         <h1 className='number'>404</h1>
@@ -11,4 +11,4 @@ function Page404() {
     )
 }
 
-export default Page404;
+export default ErrorPage;

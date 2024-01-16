@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Apropos from './components/Apropos';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Page404 from './components/Page404';
+import ErrorPage from './components/ErrorPage';
 import Logement from './components/Logement';
 
 
@@ -23,7 +23,7 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/Logement/:id" element={<Logement />} />
-                <Route path='*' element={<Page404 />} />
+                <Route path='*' element={<ErrorPage />} /> 
             </Routes>
           </main>
       <Footer />      
